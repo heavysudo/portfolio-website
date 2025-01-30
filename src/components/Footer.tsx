@@ -1,9 +1,8 @@
 const Footer = () => {
   return (
-    <footer className='bg-gray-800 text-white py-6'>
-      <div className='container mx-auto px-4 text-center'>
-        <p>&copy; {new Date().getFullYear()} Heavysudo. All rights reserved.</p>
-        <div className='mt-4'>
+    <footer className='text-white font-mono absolute bottom-2 ml-[50%] tranform translate-x-[-50%]'>
+      <div className='flex flex-row space-x-4'>
+        <div className='flex'>
           <a
             href='https://github.com/heavysudo'
             target='_blank'
@@ -29,6 +28,8 @@ const Footer = () => {
             Reddit
           </a>
         </div>
+        <span>|</span>
+        <p>&copy; {new Date().getFullYear()} Heavysudo. All rights reserved.</p>
       </div>
     </footer>
   )

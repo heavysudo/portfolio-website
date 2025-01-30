@@ -57,9 +57,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${inter.className} w-screen h-screen`}>
           <Navigation />
-          <main className='container mx-auto px-4 py-8'>{children}</main>
+          <main className='p-2 h-full w-full'>{children}</main>
           <Footer />
       </body>
     </html>

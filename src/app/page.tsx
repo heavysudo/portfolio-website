@@ -1,12 +1,28 @@
-
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <h1 className='text-4xl font-bold mb-4'>Welcome to My Portfolio</h1>
-      <p className='mb-4'>
-        Hi, I{"'"}m Heavy. I{"'"}m a Software Engineer, Photographer, and Writer.
-        Explore my site to see my projects, photos, and read my blog posts.
-      </p>
-    </main>
+    <div className='flex w-full h-full pb-10 pr-4 pl-64'>
+      <div className="flex flex-row w-full h-full space-x-2">
+        <section className="bg-slate-800 left-column h-full w-1/2 p-8 rounded-lg">
+          <h1>Latest Blogs:</h1>
+          <div className="h-full">
+            Sample Post here.
+          </div>
+        </section>
+        <section className="right-column h-full w-1/2">
+          <div className="recent-photos">
+            <h1>Recent Photos:</h1>
+            <div>
+              Sample Photos here.
+            </div>
+          </div>
+          <div className="recent-projects">
+            <h1>Recent Projects:</h1>
+            <div>
+              Sample Projects here.
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   )
 }
